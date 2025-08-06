@@ -1,8 +1,3 @@
-—
-layout: default
-title: Home
-—
-
 # 🛠️ Crafting Builds
 
 Welcome to **Crafting Builds** — a living archive of metaphysical structures, sacred systems, and experimental tools created by Anonymous Schizophrenic.
