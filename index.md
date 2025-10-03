@@ -15,7 +15,7 @@ A foundational repository documenting astrology from the ground up — planets, 
 —
 
 ## Monk’s Pen TrueType Font
-**Repository** <a href=“https://github.com/CraftingBuilds/Monk-s-Pen-TrueType-Font”>Manuscript-Codex-Font</a>
+**Repository** https://github.com/CraftingBuilds/Monk-s-Pen-TrueType-Font
 
 A font forged with the intent of encapsulating the essence of, and hard work by, a monk at a table in a far-off monastery.
 
