@@ -50,6 +50,11 @@ Coming soon — archival pages for:
 
 —
 
+## In The Works…
+
+- Automation of ‘The Daily Astrology Brief’ (maybe…)
+- Manuscript ‘Astrology Arith(m)etic’ Codex Publishing, Release Date 01/01/2026
+
 🌀 *This site is in flux. Everything here is evolving as the builds themselves evolve.*
 
 Stay tuned, stay weird, and stay protected.
