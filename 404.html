@@ -1,67 +1,56 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 <head>
-  <meta charset=“UTF-8” />
-  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”/>
-  <title>Lost in the Void | 404</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lost in the Void · Crafting Builds</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <style>
     body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
-      background: radial-gradient(circle, #0d0d23, #050511);
-      color: #eaeaff;
-      font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, rgba(124, 77, 255, 0.2), transparent 60%), #05030b;
+      color: #f8e0ff;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
     }
-
-    h1 {
-      font-size: 5rem;
-      margin: 0;
-      color: #c770f0;
+    .void-card {
+      padding: 3rem;
+      border-radius: 22px;
+      background: rgba(22, 16, 48, 0.85);
+      border: 1px solid rgba(160, 130, 255, 0.25);
+      box-shadow: 0 1.75rem 3rem rgba(9, 7, 20, 0.55);
+      max-width: 420px;
     }
-
-    p {
-      font-size: 1.3rem;
-      margin: 1.5rem;
+    .void-card h1 {
+      margin: 0 0 1rem;
+      font-family: 'Unica One', 'Space Grotesk', system-ui, sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
-
-    a {
-      color: #a6f0ff;
+    .void-card a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.3rem;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #9f7bff, #7c4dff);
+      color: #05030b;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
-      border: 1px solid #a6f0ff;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-
-    a:hover {
-      background: #a6f0ff;
-      color: #050511;
-    }
-
-    .sigil {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: pulse 2s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0% { opacity: 0.7; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.05); }
-      100% { opacity: 0.7; transform: scale(1); }
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
     }
   </style>
 </head>
 <body>
-  <div class=“sigil”>☸</div>
-  <h1>404</h1>
-  <p>You’ve wandered off the sacred path.<br>
-     The page you seek is lost beyond the veil.</p>
-  <a href=“/“>Return to the Temple</a>
+  <div class="void-card">
+    <div aria-hidden="true" style="font-size:3rem; margin-bottom:1rem;">☸</div>
+    <h1>404 — Drift Detected</h1>
+    <p>The sigils you seek are outside this coordinate.</p>
+    <p>Return to the observatory to realign with the Craft.</p>
+    <a href="{{ '/' | relative_url }}">Back to safety</a>
+  </div>
 </body>
 </html>
