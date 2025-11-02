@@ -239,6 +239,14 @@ body {
   gap: 0.9rem;
 }
 
+.hero__note {
+  margin-top: 1.5rem;
+  max-width: 52ch;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -292,6 +300,13 @@ body {
   .data-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.section-footnote {
+  margin-top: 1.25rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  max-width: 64ch;
 }
 
 .data-card {

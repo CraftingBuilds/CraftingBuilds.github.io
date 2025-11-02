@@ -14,6 +14,7 @@ description: "A cosmic interface cataloguing every file, folder, and submodule o
     <a class="button button--primary" href="{{ '/atlas/' | relative_url }}">Open the Atlas</a>
     <a class="button button--secondary" href="{{ '/atlas/submodules/' | relative_url }}">Review Submodules</a>
   </div>
+  <p class="hero__note">There may be more logs in the fire than the constellations displayed here—new repositories ignite once they are forged for public view.</p>
 </section>
 
 <section aria-labelledby="projects-title">
@@ -23,6 +24,7 @@ description: "A cosmic interface cataloguing every file, folder, and submodule o
       {% include project-card.html project=project %}
     {% endfor %}
   </div>
+  <p class="section-footnote">All active CraftingBuilds repositories are woven into this grid. Expect additional embers to surface as private experiments mature.</p>
 </section>
 
 <section class="section-panel" aria-labelledby="highlights-title">

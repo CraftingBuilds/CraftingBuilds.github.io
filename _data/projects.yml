@@ -28,3 +28,64 @@
     - Container ready
   local_url: /atlas/lightcraft-engine/
   repository: https://github.com/CraftingBuilds/Lightcraft
+- id: astro-arith-archive
+  name: Astro Arith Archive
+  category: Reference Repository
+  summary: "A preservation vault for astronomical arithmetic research, raw scans, and celestial numerology experiments."
+  tags:
+    - Astronomy
+    - Numerology
+    - Research notes
+  repository: https://github.com/CraftingBuilds/Astro-Arith-Archive
+- id: astrology-arith-m-etic
+  name: Astrology Arith(m)etic
+  category: Curriculum Repository
+  summary: "Structured lessons and study sheets that translate planetary motion into teachable arithmetic progressions."
+  tags:
+    - Pedagogy
+    - Astrology
+    - Worksheets
+  repository: https://github.com/CraftingBuilds/Astrology-Arith-m-etic
+- id: audio-visuals
+  name: Audio Visuals
+  category: Multimedia Repository
+  summary: "Soundscapes, video sketches, and audiovisual tests that complement the ritual engineering playbooks."
+  tags:
+    - Media
+    - Sound design
+    - Video
+  repository: https://github.com/CraftingBuilds/Audio-Visuals
+- id: lightcraft-root
+  name: LightCraft Core Repository
+  category: Standalone Repository
+  summary: "The dedicated LightCraft codebase, kept in sync with this site's submodule for experiments beyond the pages build."
+  tags:
+    - Technomancy
+    - Engine
+    - Experiments
+  repository: https://github.com/CraftingBuilds/LightCraft
+- id: monks-pen
+  name: Monk’s Pen TrueType Font
+  category: Typography Repository
+  summary: "A bespoke typeface channeling monastic scripts, distributed as a TrueType font for ritual interfaces."
+  tags:
+    - Typography
+    - Design asset
+  repository: https://github.com/CraftingBuilds/Monk-s-Pen-TrueType-Font
+- id: ritual-grimoire
+  name: RitualGrimoire Stellar Shield
+  category: Protective Schema
+  summary: "Ritual schematics and shielding diagrams prepared for invocation as a repository or submodule."
+  tags:
+    - Ritual tooling
+    - Protection
+  repository: https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield
+- id: soundcraft
+  name: SoundCraft Linux App
+  category: Application Repository
+  summary: "Linux-native soundcrafting interface that orchestrates samples and live playback for ceremonial scoring."
+  tags:
+    - Application
+    - Linux
+    - Audio tooling
+  repository: https://github.com/CraftingBuilds/SoundCraft_Linux_App
