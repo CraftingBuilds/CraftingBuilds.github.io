@@ -1,14 +1,27 @@
 <header class="site-header">
-  <div class="header-bar">
-    <div class="title-block">
-      <h1>CraftingBuilds</h1>
-      <p>- Welcome to my Digital Temple -</p>
-    </div>
-    <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="https://github.com/CraftingBuilds/Astrology-Arithm-etic" target="_blank" rel="noopener">Astrology Arith(m)etic</a>
-      <a href="{{ '/astro-arith/' | relative_url }}">Astro Arith Archive</a>
-      <a href="{{ '/grimoire/' | relative_url }}">Grimoire</a>
+  <div class="site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand__sigil" aria-hidden="true">☸</span>
+      <span class="brand__text">
+        <span class="brand__title">{{ site.title }}</span>
+        <span class="brand__subtitle">Metaphysical Build Log</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        {% for item in site.navigation %}
+          {% assign href = item.url %}
+          {% unless item.external %}
+            {% assign href = item.url | relative_url %}
+          {% endunless %}
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="{{ href }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>
+              {{ item.title }}
+              {% if item.external %}<span aria-hidden="true" class="site-nav__external">↗</span>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </nav>
   </div>
 </header>

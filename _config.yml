@@ -1,21 +1,20 @@
+# Site identity
 title: Crafting Builds
 description: >-
-  A living archive of metaphysical frameworks, astrological mechanics, ritual code,
-  and multimedia experiments by Anonymous Schizophrenic.
-
-baseurl: ""  # leave blank for user.github.io root
+  A living archive of metaphysical frameworks, astrological mechanics,
+  ritual code, and multimedia experiments by Anonymous Schizophrenic.
+baseurl: ""
 url: "https://craftingbuilds.github.io"
 
 # Build settings
-theme: minima
 markdown: kramdown
 permalink: pretty
+theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Collections (you can expand this later for structured directories)
 collections:
   astro-arith:
     output: true
@@ -24,7 +23,6 @@ collections:
     output: true
     permalink: /grimoire/:path/
 
-# Defaults (helps markdown files auto-inherit layouts)
 defaults:
   - scope:
       path: ""
@@ -41,21 +39,30 @@ defaults:
     values:
       layout: "default"
 
-# SEO & Feed
+navigation:
+  - title: Home
+    url: /
+  - title: Atlas
+    url: /atlas/
+  - title: Submodules
+    url: /atlas/submodules/
+  - title: GitHub
+    url: https://github.com/CraftingBuilds
+    external: true
+
 social:
   name: Anonymous Schizophrenic
   links:
     - https://github.com/CraftingBuilds
     - https://schizostudios.org
 
-# Exclude these files from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - README.md
   - LICENSE
+  - apache-site
 
-# Optional GitHub Pages override
 github:
   is_project_page: false
