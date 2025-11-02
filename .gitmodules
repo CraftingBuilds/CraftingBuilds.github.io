@@ -1,7 +1,6 @@
 [submodule "RitualGrimoire-Stellar-Shield"]
 	path = RitualGrimoire-Stellar-Shield
 	url = https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield
-[submodule "Lightcraft"]
 [submodule "LightCraft"]
 	path = LightCraft
 	url = git@github.com:CraftingBuilds/LightCraft.git
