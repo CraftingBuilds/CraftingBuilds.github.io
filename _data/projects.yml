@@ -1,0 +1,30 @@
+- id: core
+  name: Crafting Builds Core
+  category: Root Repository
+  summary: "The main GitHub Pages codebase that orchestrates collections for astrology research, ritual studies, and multimedia experiments."
+  tags:
+    - Knowledge atlas
+    - GitHub Pages
+    - Collections
+  local_url: /atlas/core/
+  repository: https://github.com/CraftingBuilds/CraftingBuilds.github.io
+- id: lightcraft-notes
+  name: LightCraft Notespace
+  category: Internal Archive
+  summary: "An in-repo sanctuary for meditations on technomancy, trancework, and the fusion of science with spirit."
+  tags:
+    - Ritual technology
+    - Narrative
+    - Concept deck
+  local_url: /atlas/lightcraft/
+  repository: https://github.com/CraftingBuilds/CraftingBuilds.github.io/tree/work/LightCraft
+- id: lightcraft-engine
+  name: Lightcraft Submodule
+  category: Git Submodule
+  summary: "Externalized Lightcraft repository mounted as a submodule, ready for reuse in other builds and containerized experiments."
+  tags:
+    - Submodule
+    - Shared engine
+    - Container ready
+  local_url: /atlas/lightcraft-engine/
+  repository: https://github.com/CraftingBuilds/Lightcraft

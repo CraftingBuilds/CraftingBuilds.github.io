@@ -1,69 +1,63 @@
-# 🛠️ Crafting Builds
+---
+layout: default
+title: Crafting Builds Observatory
+description: "A cosmic interface cataloguing every file, folder, and submodule orbiting the CraftingBuilds GitHub Pages repository."
+---
+<section class="hero">
+  <span class="hero__eyebrow">Cartography for the Craft</span>
+  <h1 class="hero__title">Map the Metaphysical Builds</h1>
+  <p class="hero__description">
+    Explore every document, ritual framework, and experimental subsystem maintained inside this repository.
+    From astrology codices to Lightcraft engines, the observatory keeps each artifact illuminated.
+  </p>
+  <div class="hero__actions">
+    <a class="button button--primary" href="{{ '/atlas/' | relative_url }}">Open the Atlas</a>
+    <a class="button button--secondary" href="{{ '/atlas/submodules/' | relative_url }}">Review Submodules</a>
+  </div>
+</section>
 
-Welcome to **Crafting Builds** — a living archive of metaphysical structures, sacred systems, and experimental tools created by Anonymous Schizophrenic.
+<section aria-labelledby="projects-title">
+  <h2 id="projects-title" class="section-title">Repository Chapters</h2>
+  <div class="data-grid">
+    {% for project in site.data.projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-Here you’ll find organized access to ongoing frameworks and repositories that interweave esoterics, astrology, ritual, sound, and AI.
+<section class="section-panel" aria-labelledby="highlights-title">
+  <h2 id="highlights-title">Highlights from the Temple</h2>
+  <div class="section-panel__grid">
+    <article class="highlight-card">
+      <h3>Astrology Arith(m)etic</h3>
+      <p>A structured codex of planetary mechanics and astrological pedagogy. Ideal for training AI or meditative study.</p>
+      <a href="https://github.com/CraftingBuilds/Astrology-Arithm-etic" target="_blank" rel="noopener">Source Repository</a>
+    </article>
+    <article class="highlight-card">
+      <h3>Grimoire Collection</h3>
+      <p>Ritual schematics and spiritual tooling catalogued for quick invocation. Pair with the Lightcraft engine for praxis.</p>
+      <a href="https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield" target="_blank" rel="noopener">Stellar Shield Blueprint</a>
+    </article>
+  </div>
+</section>
 
-—
-
-## 📘 Astrology Arith(m)etic
-
-**Repository:** [Astrology Arith(m)etic](https://github.com/CraftingBuilds/Astrology-Arithm-etic)
-
-A foundational repository documenting astrology from the ground up — planets, aspects, declinations, fixed stars, and more. Built for clarity, training AI, and spiritual education. This is the **source code of cosmic logic**.
-
-—
-
-## Monk’s Pen TrueType Font
-**Repository** https://github.com/CraftingBuilds/Monk-s-Pen-TrueType-Font
-
-A font forged with the intent of encapsulating the essence of, and hard work by, a monk at a table in a far-off monastery.
-
-Let this font do the hard work for you, making a product built to last the ages. 
-
-—-
-
-## 📚 Astro-Arith-Archive
-
-**Live Version:** [Astro-Arith-Archive](./astro-arith/)
-
-An interactive, publishable presentation of the Astrology Arith(m)etic knowledgebase — cleanly structured and navigable like a sacred library.
-
-Explore:
-
-- 🔸 [Building Blocks](/astro-arith/building-blocks/)
-- 🌟 [Fixed Stars](/astro-arith/fixed-stars/)
-- 🪐 [Celestial Bodies](/astro-arith/celestial-bodies/)
-
-—
-
-## 🔮 Grimoire Collection
-
-**Folder:** [Grimoire](./grimoire/)
-
-Your vault of ritual work, spiritual frameworks, and metaphysical tools.
-
-### Featured Repository:  
-- **🛡️ [RitualGrimoire-Stellar-Shield](https://github.com/CraftingBuilds/RitualGrimoire-Stellar_Shield)**  
-  A protective energetic construct built using sound and light metaphysics, designed for shielding through ritual engagement.
-
-—
-
-## 🎙️ Podcast & Audio Projects
-
-Coming soon — archival pages for:
-
-- **The Life of a Young, Struggling Schizophrenic**
-- **The Daily Astrology Brief**
-- **Schizo Studios - Lessons Learned** 
-
-—
-
-## In The Works…
-
-- Automation of ‘The Daily Astrology Brief’ (maybe…)
-- Manuscript ‘Astrology Arith(m)etic’ Codex Publishing, Release Date 01/01/2026
-
-🌀 *This site is in flux. Everything here is evolving as the builds themselves evolve.*
-
-Stay tuned, stay weird, and stay protected.
+<section class="section-panel" id="repositories" aria-labelledby="repositories-title">
+  <h2 id="repositories-title">GitHub Constellation</h2>
+  <p class="section-intro">
+    Every public repository from the CraftingBuilds GitHub account is charted below so you can jump between engines, archives,
+    and experimental sound workbenches. Follow the links to explore, and remember: there may be more logs in the fire than are
+    currently public or forged into repositories just yet.
+  </p>
+  <div class="repository-grid">
+    {% for repo in site.data.repositories %}
+    <article class="repository-card" id="repo-{{ repo.slug }}">
+      <header class="repository-card__header">
+        <h3 class="repository-card__title">{{ repo.name }}</h3>
+        <span class="repository-card__focus">{{ repo.focus }}</span>
+      </header>
+      <p class="repository-card__summary">{{ repo.summary }}</p>
+      <a class="repository-card__link" href="{{ repo.url }}" target="_blank" rel="noopener">Visit Repository</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

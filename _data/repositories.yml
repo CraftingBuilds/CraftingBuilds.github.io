@@ -1,0 +1,40 @@
+- name: Astro-Arith-Archive
+  slug: astro-arith-archive
+  focus: Planetary computation logs
+  summary: "Astronomical arithmetic tables, ephemeris drafts, and astro-mathematical experiments for future tooling."
+  url: https://github.com/CraftingBuilds/Astro-Arith-Archive
+- name: Astrology-Arith-m-etic
+  slug: astrology-arith-m-etic
+  focus: Celestial pedagogy
+  summary: "Coursework-style notes and models that translate astrology into learnable, procedural systems."
+  url: https://github.com/CraftingBuilds/Astrology-Arith-m-etic
+- name: Audio-Visuals
+  slug: audio-visuals
+  focus: Sonic and visual studies
+  summary: "Soundscapes, visualizers, and multimedia sketches that support trancework and ceremonial design."
+  url: https://github.com/CraftingBuilds/Audio-Visuals
+- name: CraftingBuilds.github.io
+  slug: craftingbuilds-github-io
+  focus: Observatory portal
+  summary: "This GitHub Pages codebase that keeps the atlas, apache export, and repository cartography aligned."
+  url: https://github.com/CraftingBuilds/CraftingBuilds.github.io
+- name: LightCraft
+  slug: lightcraft
+  focus: Technomantic engine
+  summary: "Primary LightCraft engine housing prompts, renderings, and the container logic for metaphysical experiments."
+  url: https://github.com/CraftingBuilds/LightCraft
+- name: Monk's Pen TrueType Font
+  slug: monks-pen-truetype-font
+  focus: Typographic artifacts
+  summary: "Custom lettering forged for grimoires and interface sigils, packaged as an installable TrueType font."
+  url: https://github.com/CraftingBuilds/Monk-s-Pen-TrueType-Font
+- name: RitualGrimoire-Stellar-Shield
+  slug: ritualgrimoire-stellar-shield
+  focus: Protective schematics
+  summary: "Living grimoire dedicated to stellar shielding rites, also tracked as an optional repository submodule."
+  url: https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield
+- name: SoundCraft Linux App
+  slug: soundcraft-linux-app
+  focus: Audio workbench
+  summary: "A Linux-oriented ritual sound application used to sculpt ambience, chants, and resonant loops."
+  url: https://github.com/CraftingBuilds/SoundCraft_Linux_App
