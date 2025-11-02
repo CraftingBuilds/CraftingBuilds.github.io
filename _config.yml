@@ -46,6 +46,8 @@ navigation:
     url: /atlas/
   - title: Submodules
     url: /atlas/submodules/
+  - title: Repositories
+    url: /#repositories
   - title: GitHub
     url: https://github.com/CraftingBuilds
     external: true

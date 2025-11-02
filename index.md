@@ -42,3 +42,24 @@ description: "A cosmic interface cataloguing every file, folder, and submodule o
     </article>
   </div>
 </section>
+
+<section class="section-panel" id="repositories" aria-labelledby="repositories-title">
+  <h2 id="repositories-title">GitHub Constellation</h2>
+  <p class="section-intro">
+    Every public repository from the CraftingBuilds GitHub account is charted below so you can jump between engines, archives,
+    and experimental sound workbenches. Follow the links to explore, and remember: there may be more logs in the fire than are
+    currently public or forged into repositories just yet.
+  </p>
+  <div class="repository-grid">
+    {% for repo in site.data.repositories %}
+    <article class="repository-card" id="repo-{{ repo.slug }}">
+      <header class="repository-card__header">
+        <h3 class="repository-card__title">{{ repo.name }}</h3>
+        <span class="repository-card__focus">{{ repo.focus }}</span>
+      </header>
+      <p class="repository-card__summary">{{ repo.summary }}</p>
+      <a class="repository-card__link" href="{{ repo.url }}" target="_blank" rel="noopener">Visit Repository</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
