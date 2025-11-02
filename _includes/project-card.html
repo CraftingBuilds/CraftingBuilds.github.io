@@ -1,0 +1,23 @@
+<article class="data-card">
+  <span class="data-card__badge">{{ project.category | default: 'Repository' }}</span>
+  <h3 class="data-card__title">{{ project.name }}</h3>
+  <p class="data-card__description">{{ project.summary }}</p>
+  {% if project.tags %}
+    <ul class="tag-list">
+      {% for tag in project.tags %}
+        <li class="tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <div class="card-actions">
+    {% if project.local_url %}
+      <a class="button button--primary" href="{{ project.local_url | relative_url }}">Explore</a>
+    {% endif %}
+    {% if project.repository %}
+      <a class="card-link" href="{{ project.repository }}" target="_blank" rel="noopener">Repository</a>
+    {% endif %}
+    {% if project.reference %}
+      <a class="card-link" href="{{ project.reference }}" target="_blank" rel="noopener">Reference</a>
+    {% endif %}
+  </div>
+</article>

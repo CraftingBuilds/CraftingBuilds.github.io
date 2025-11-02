@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 <head>
-  <meta charset=“UTF-8”>
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-  <meta name=“description” content=“{{ page.description | default: site.description }}”>
-  <link rel=“stylesheet” href=“{{ ‘/assets/css/style.css’ | relative_url }}”>
-
+  <meta charset="utf-8" />
+  <title>{{ page.title | escape }} · {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   {%- seo -%}
 </head>
-<body>
-
+<body class="theme-celestial">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="background-veil" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
   {% include nav.html %}
-
-  <main class=“container”>
+  <main id="content" class="site-main">
     {{ content }}
   </main>
-
-  <footer>
-    <p>&copy; {{ site.time | date: ‘%Y’ }} {{ site.title }} · Built by Anonymous Schizophrenic</p>
-    <div class=“sigil”>☸</div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} · Crafted by Anonymous Schizophrenic</p>
+      <p class="footer-links">
+        <a href="mailto:contact@schizostudios.org">contact@schizostudios.org</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/CraftingBuilds" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
   </footer>
-
 </body>
 </html>

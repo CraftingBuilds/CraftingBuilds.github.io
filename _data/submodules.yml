@@ -1,0 +1,10 @@
+- name: Lightcraft
+  path: Lightcraft
+  url: https://github.com/CraftingBuilds/Lightcraft
+  description: "Container-ready Lightcraft engine mirrored into this site for direct inclusion and reuse."
+  status: active
+- name: RitualGrimoire-Stellar-Shield
+  path: RitualGrimoire-Stellar-Shield
+  url: https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield
+  description: "Protective energetic construct documented as a submodule. Initialize to pull ritual shielding blueprints."
+  status: pending
