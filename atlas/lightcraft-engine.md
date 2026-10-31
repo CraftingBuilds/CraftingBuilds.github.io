@@ -7,8 +7,8 @@ kicker: Submodule
 ---
 ## Embedded README
 
-{% capture submodule_readme %}{% include_relative ../Lightcraft/README.md %}{% endcapture %}
-{{ submodule_readme | markdownify }}
+The Lightcraft submodule documentation is available here:
+[Lightcraft README](https://github.com/CraftingBuilds/CraftingBuilds.github.io/blob/main/LightCraft/README.md)
 
 ## Working with the Submodule
 
