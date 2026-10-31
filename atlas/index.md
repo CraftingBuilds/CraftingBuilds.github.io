@@ -20,9 +20,15 @@ kicker: Navigational Chart
 ### {{ project.name }}
 - **Category:** {{ project.category }}
 - **Summary:** {{ project.summary }}
-{% if project.local_url %}- **Local Chapter:** [Open the detail page]({{ project.local_url | relative_url }}){% endif %}
-{% if project.repository %}- **Repository:** [View on GitHub]({{ project.repository }}){% endif %}
-{% if project.tags %}- **Tags:** {{ project.tags | join: ', ' }}{% endif %}
+{% if project.local_url %}
+- **Local Chapter:** [Open the detail page]({{ project.local_url | relative_url }})
+{% endif %}
+{% if project.repository %}
+- **Repository:** [View on GitHub]({{ project.repository }})
+{% endif %}
+{% if project.tags %}
+- **Tags:** {{ project.tags | join: ', ' }}
+{% endif %}
 {% endfor %}
 
 ## Submodule Snapshot
@@ -36,7 +42,7 @@ The site tracks each registered submodule so that both the Jekyll build and the 
 
 ## Public Repository Directory
 
-Every active CraftingBuilds repository is cross-linked for quick navigation. Some experiments stay in ember-form until they are ready for public release, so expect the constellation to continue expanding.
+Every active CraftingBuilds repository is cross-linked for quick navigation. Some experiments stay in ember-form until they are ready for public release, so expect the constellation to continue evolving.
 
 | Repository | Focus | Link |
 | --- | --- | --- |
@@ -45,57 +51,15 @@ Every active CraftingBuilds repository is cross-linked for quick navigation. Som
 
 > There may be more logs in the fire than what you see here—some works are incubating privately or awaiting their own repositories.
 
-=====
 ## Public Repository Network
 
-Every beacon listed here reflects a public CraftingBuilds repository. Where you see gaps, trust that there may be more logs in the fire waiting to emerge or projects still coalescing before they are minted as repositories.
+Every beacon listed here reflects a public CraftingBuilds repository. Where you see gaps, trust that there may be more logs in the fire waiting to emerge or projects still coalescing before they are ready.
 
 | Repository | Focus | Portal |
 | --- | --- | --- |
 {% for repo in site.data.repositories %}| {{ repo.name }} | {{ repo.focus }} | [Visit on GitHub]({{ repo.url }}) |
 {% endfor %}
 
->>>>>>> e8e72bbda0be42ff91c03dfac6a2147de17dc786
-## External Knowledge Streams
-
-- [Astrology Arith(m)etic](https://github.com/CraftingBuilds/Astrology-Arithm-etic) — foundational cosmic logic repository.
-- [RitualGrimoire-Stellar-Shield](https://github.com/CraftingBuilds/RitualGrimoire-Stellar-Shield) — protective construct schematics ready to initialize as a submodule.
-- [CraftingBuilds GitHub Organization](https://github.com/CraftingBuilds) — jump into the larger ecosystem of metaphysical tooling.
-{% if project.tags %}- **Tags:** {{ project.tags | join: ', ' }}{% endif %}
-{% endfor %}
-
-## Submodule Snapshot
-
-The site tracks each registered submodule so that both the Jekyll build and the Apache export can reference their source.
-
-| Submodule | Status | Path | Remote |
-| --- | --- | --- | --- |
-{% for module in site.data.submodules %}| {{ module.name }} | {{ module.status | capitalize }} | `{{ module.path }}` | [{{ module.url }}]({{ module.url }}) |
-{% endfor %}
-
-<<<<<<<+HEAD
-## Public Repository Directory
-
-Every active CraftingBuilds repository is cross-linked for quick navigation. Some experiments stay in ember-form until they are ready for public release, so expect the constellation to continue expanding.
-
-| Repository | Focus | Link |
-| --- | --- | --- |
-{% assign public_repos = site.data.projects | where_exp: 'item', "item.repository" %}{% for project in public_repos %}| {{ project.name }} | {{ project.summary }} | [Visit]({{ project.repository }}) |
-{% endfor %}
-
-> There may be more logs in the fire than what you see here—some works are incubating privately or awaiting their own repositories.
-
-=====
-## Public Repository Network
-
-Every beacon listed here reflects a public CraftingBuilds repository. Where you see gaps, trust that there may be more logs in the fire waiting to emerge or projects still coalescing before they are minted as repositories.
-
-| Repository | Focus | Portal |
-| --- | --- | --- |
-{% for repo in site.data.repositories %}| {{ repo.name }} | {{ repo.focus }} | [Visit on GitHub]({{ repo.url }}) |
-{% endfor %}
-
->>>>>>> e8e72bbda0be42ff91c03dfac6a2147de17dc786
 ## External Knowledge Streams
 
 - [Astrology Arith(m)etic](https://github.com/CraftingBuilds/Astrology-Arithm-etic) — foundational cosmic logic repository.
