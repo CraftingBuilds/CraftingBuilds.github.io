@@ -7,8 +7,10 @@ kicker: Root Repository
 ---
 ## Mission Statement
 
-{% capture root_readme %}{% include_relative ../README.md %}{% endcapture %}
-{{ root_readme | markdownify }}
+The root repository overview is documented in the project README:
+[README.md](https://github.com/CraftingBuilds/CraftingBuilds.github.io/blob/main/README.md)
+
+This atlas page summarizes the repository structure and documentation scaffolding used to publish the site.
 
 ## Layout & Includes
 
