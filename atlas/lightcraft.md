@@ -7,8 +7,8 @@ kicker: Internal Archive
 ---
 ## Embedded README
 
-{% capture notespace %}{% include_relative ../LightCraft/README.md %}{% endcapture %}
-{{ notespace | markdownify }}
+The project notespace is documented in the LightCraft README:
+[LightCraft README](https://github.com/CraftingBuilds/CraftingBuilds.github.io/blob/main/LightCraft/README.md)
 
 ## Suggested Uses
 
